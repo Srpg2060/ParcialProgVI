@@ -1,0 +1,20 @@
+<div class="example-container">
+  <mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+      Digite el valor a consignar
+      <br>
+      <br>
+        <mat-form-field appearance="fill">
+          <mat-label>consignar</mat-label>
+          <input matInput type="number" placeholder="" [formControl]="monto">
+        </mat-form-field>
+        <br>
+        <button (click)='Consignar()' mat-button>Consignar</button>
+        <button routerLink="/menu" mat-button>Regresar <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+    </mat-grid-tile>

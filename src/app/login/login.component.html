@@ -1,0 +1,21 @@
+<mat-grid-list cols="1" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card>
+      <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input matInput type="name" [formControl]="Usuario">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" [formControl]="Contrasenha">
+        </mat-form-field>
+        <br>
+        <button (click)="onValidacion()" mat-raised-button>Ingresar <i class="material-icons">
+            vpn_key
+          </i></button>
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
