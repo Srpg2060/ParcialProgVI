@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
   onValidacion() {
 
-    if (this.Usuario.value == "Aquiles" && this.Contrasenha.value == "Caigo") {
+    if (this.Usuario.value == "admin" && this.Contrasenha.value == "12345") {
       localStorage.setItem('Saldo', '100000');
       localStorage.setItem('Cretiros', '3');
       this.router.navigate(['/menu']);
